@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: lightblue; 
+    color: rgb(118, 210, 247); 
+}
+
+h1, h2 {
+    color: rgb(108, 158, 234); 
+}
+
+/* Start Page */
+#start-container {
+    margin-top: 20vh; 
+}
+
+#play-button {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#play-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Game Page Layout */
+#game-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#question-info {
+    display: flex; 
+    justify-content: space-between; 
+    width: 80%; 
+    margin-bottom: 10px;
+}
+
+#progress-bar-container {
+    width: 80%;
+    margin: 0 auto 20px;
+    height: 20px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: blue;
+    width: 0;
+    transition: width 0.3s;
+}
+
+#question-count, #score {
+    font-size: 1.2em;
+    color: blue;
+}
+
+#question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    border: 2px solid transparent;
+}
+
+.choice:hover {
+    border-color: blue;
+}
+
+.option-label {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.correct {
+    background-color: lightgreen !important;
+}
+
+.incorrect {
+    background-color: pink !important;
+}
+
+#end-container {
+    margin-top: 20vh; 
+}
+
+#end-container button {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#end-container button:hover {
+    background-color: blue;
+    color: white;
+}
